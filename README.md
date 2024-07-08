@@ -1,3 +1,7 @@
+# Process of Building
+
+Building the React fitness site involved a comprehensive approach to delivering key functionalities that cater to fitness enthusiasts' needs. The development process commenced with planning and designing a user-friendly interface that prioritizes ease of navigation and accessibility. Implementing core features such as posting, editing, and deleting workouts required robust state management and integration of CRUD operations, ensuring users can seamlessly manage their fitness routines. Incorporating a leaderboard for competitions involved creating a leaderboard component that aggregates and displays user rankings based on workout achievements, fostering a competitive spirit among users. Additionally, designing an informative about page was essential for conveying the site's mission, values, and fitness philosophy, enhancing user engagement and trust. Throughout development, rigorous testing and iteration were crucial to refining features and ensuring a smooth user experience, ultimately empowering users to achieve their fitness goals effectively.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
