@@ -1,74 +1,22 @@
-# Process of Building
+# React Fitness
 
-Building the React fitness site involved a comprehensive approach to delivering key functionalities that cater to fitness enthusiasts' needs. The development process commenced with planning and designing a user-friendly interface that prioritizes ease of navigation and accessibility. Implementing core features such as posting, editing, and deleting workouts required robust state management and integration of CRUD operations, ensuring users can seamlessly manage their fitness routines. Incorporating a leaderboard for competitions involved creating a leaderboard component that aggregates and displays user rankings based on workout achievements, fostering a competitive spirit among users. Additionally, designing an informative about page was essential for conveying the site's mission, values, and fitness philosophy, enhancing user engagement and trust. Throughout development, rigorous testing and iteration were crucial to refining features and ensuring a smooth user experience, ultimately empowering users to achieve their fitness goals effectively.
+A small fitness community site built with React. Users log workouts, post updates to a community feed, and compete on a leaderboard ranked by calories and minutes.
 
-# Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Create, edit, and delete workouts and community posts
+- Search posts
+- Leaderboards by calories burned and minutes trained
+- Client-side routing with React Router, global state with Easy Peasy
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+React 18, React Router 6, Easy Peasy, Axios, date-fns. Data is served from `data/db.json` by [json-server](https://github.com/typicode/json-server), which stands in for a backend.
 
-### `npm start`
+## Run it
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+npx json-server -p 3500 -w data/db.json   # mock API on port 3500
+npm start                                 # app on http://localhost:3000
+```
